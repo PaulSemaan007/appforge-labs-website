@@ -19,12 +19,38 @@ AppForge Labs turns industry job postings into production-ready open-source appl
 
 ## Features
 
-- 📱 Fully responsive design
-- ⚡ Fast loading (no frameworks)
+### Core Features
+- 📱 Fully responsive design with mobile hamburger menu
+- ⚡ Fast loading (vanilla JS, no frameworks)
 - 🎨 Modern UI with smooth animations
-- 📧 Contact form integration
-- 🚀 Project showcase cards
-- 💰 Pricing comparison
+- 🌙 Dark mode toggle with localStorage persistence
+- 📊 Scroll progress bar
+- 🔝 Back to top button
+- 📧 Contact & newsletter form integration (Formspree)
+
+### Sections
+- 🏠 Hero section with clear CTAs
+- 📈 Animated statistics counter (GitHub stars, downloads, users)
+- ℹ️ About/Story section with mission statement
+- 🚀 Enhanced project cards with screenshots, badges, and GitHub stats
+- 💼 Use cases section with real-world examples
+- 🔄 How It Works with icon-enhanced steps
+- 💰 Comprehensive pricing comparison (Free, Professional, Enterprise)
+- ⭐ Testimonials section
+- ❓ FAQ accordion
+- 📝 Blog/News section
+- 📬 Newsletter signup
+- 🔗 Enhanced footer with social links
+- 📜 Privacy policy page
+
+### Interactive Elements
+- Smooth scroll navigation
+- FAQ accordion functionality
+- Mobile-responsive hamburger menu
+- Animated counter on scroll
+- Project image hover effects
+- Form validation and loading states
+- Font Awesome icons throughout
 
 ## Local Development
 
@@ -92,24 +118,49 @@ When OpenSAM is deployed to Streamlit Cloud, update the demo link in `index.html
 
 ```
 appforge-labs-website/
-├── index.html          # Main page
+├── index.html          # Main landing page
+├── privacy.html        # Privacy policy page
 ├── css/
-│   └── style.css       # Styles
+│   └── style.css       # Complete styles with dark mode
 ├── js/
-│   └── script.js       # Interactivity
-├── images/             # Images (add logos, screenshots)
-└── README.md           # This file
+│   └── script.js       # All interactive features
+├── images/
+│   ├── logo.svg        # AppForge Labs logo
+│   ├── favicon.svg     # Browser favicon
+│   └── opensam-dashboard.svg  # Project screenshot
+└── README.md           # Documentation
 ```
+
+## Completed Enhancements ✅
+
+- ✅ Project screenshots (SVG placeholders)
+- ✅ Blog section for project updates
+- ✅ Use cases section
+- ✅ Testimonials section
+- ✅ Dark mode toggle with persistence
+- ✅ Mobile hamburger navigation
+- ✅ FAQ accordion
+- ✅ Newsletter signup
+- ✅ Scroll progress bar
+- ✅ Back to top button
+- ✅ Animated statistics
+- ✅ Privacy policy page
+- ✅ Enhanced footer with social links
+- ✅ GitHub badges integration
+- ✅ Font Awesome icons
 
 ## Future Enhancements
 
-- [ ] Add project screenshots/videos
-- [ ] Blog section for project updates
-- [ ] Case studies page
-- [ ] Testimonials section
-- [ ] Multi-page navigation (when needed)
-- [ ] Dark mode toggle
-- [ ] Analytics integration
+- [ ] Analytics integration (Google Analytics / Plausible)
+- [ ] Actual blog posts (Markdown/CMS integration)
+- [ ] Case study detail pages
+- [ ] Team member profiles
+- [ ] Client logo section
+- [ ] Video testimonials
+- [ ] Live chat integration
+- [ ] Multi-language support
+- [ ] Search functionality for blog
+- [ ] RSS feed for blog
 
 ## License
 

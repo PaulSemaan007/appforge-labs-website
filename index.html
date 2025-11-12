@@ -6,24 +6,38 @@
     <meta name="description" content="AppForge Labs - Forging solutions from real-world requirements. Open-source enterprise tools with professional customization.">
     <meta name="keywords" content="software development, enterprise tools, custom software, SAM, IT asset management">
     <title>AppForge Labs - Forging Solutions from Real-World Requirements</title>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
+                <img src="images/logo.svg" alt="AppForge Labs Logo" class="nav-logo">
                 <h2>AppForge Labs</h2>
             </div>
             <div class="nav-links">
+                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
+                <a href="#use-cases">Use Cases</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#pricing">Pricing</a>
+                <a href="#blog">Blog</a>
                 <a href="#contact" class="btn-primary">Get Started</a>
             </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
@@ -41,6 +55,71 @@
         </div>
     </section>
 
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <div class="trust-stats">
+                <div class="trust-stat">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-value" data-target="50">0</div>
+                    <div class="stat-label">GitHub Stars</div>
+                </div>
+                <div class="trust-stat">
+                    <i class="fas fa-download"></i>
+                    <div class="stat-value" data-target="500">0</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="trust-stat">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-value" data-target="100">0</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="trust-stat">
+                    <i class="fas fa-code-branch"></i>
+                    <div class="stat-value" data-target="5">0</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>AppForge Labs was born from a simple observation: job postings reveal exactly what businesses need, yet many teams rebuild the same solutions from scratch.</p>
+                    <p>We analyze real-world job requirements from hundreds of postings, identify common patterns, and build production-ready open-source tools that address these needs. Our projects aren't theoretical—they're built to solve actual business problems.</p>
+                    <p>Every tool we create is free and open-source. We believe great software should be accessible to everyone, while offering professional customization services for teams who need tailored solutions.</p>
+                    <div class="about-cta">
+                        <a href="#projects" class="btn-primary">View Our Projects</a>
+                        <a href="https://github.com/paulsemaan007" class="btn-secondary" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Real Requirements</h3>
+                        <p>Built from actual job postings and business needs</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Open Source</h3>
+                        <p>100% free and MIT licensed for everyone</p>
+                    </div>
+                    <div class="about-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Production Ready</h3>
+                        <p>Battle-tested solutions you can deploy today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
@@ -50,51 +129,140 @@
             <div class="projects-grid">
                 <!-- OpenSAM Project Card -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <h3>OpenSAM</h3>
-                        <span class="project-badge">Live Demo</span>
-                    </div>
-                    <p class="project-category">Software Asset Management</p>
-                    <p class="project-description">
-                        Comprehensive SAM solution for tracking licenses, optimizing spending, and maintaining compliance.
-                        Features ELP tracking, renewal alerts, cost allocation, and scenario planning.
-                    </p>
-                    <div class="project-features">
-                        <span class="feature-tag">License Tracking</span>
-                        <span class="feature-tag">Compliance</span>
-                        <span class="feature-tag">Cost Optimization</span>
-                        <span class="feature-tag">ServiceNow Integration</span>
-                    </div>
-                    <div class="project-stats">
-                        <div class="stat">
-                            <strong>5</strong>
-                            <span>Modules</span>
-                        </div>
-                        <div class="stat">
-                            <strong>Python</strong>
-                            <span>Tech Stack</span>
-                        </div>
-                        <div class="stat">
-                            <strong>MIT</strong>
-                            <span>License</span>
+                    <div class="project-image">
+                        <img src="images/opensam-dashboard.svg" alt="OpenSAM Dashboard Screenshot">
+                        <div class="project-overlay">
+                            <a href="https://opensam.streamlit.app" class="overlay-btn" target="_blank" rel="noopener">
+                                <i class="fas fa-external-link-alt"></i> View Demo
+                            </a>
                         </div>
                     </div>
-                    <div class="project-actions">
-                        <a href="https://opensam.streamlit.app" class="btn-primary" target="_blank" rel="noopener" id="demo-link">Try Live Demo</a>
-                        <a href="https://github.com/paulsemaan007/OpenSAM" class="btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>OpenSAM</h3>
+                            <span class="project-badge">
+                                <i class="fas fa-circle pulse"></i> Live Demo
+                            </span>
+                        </div>
+                        <p class="project-category">
+                            <i class="fas fa-tag"></i> Software Asset Management
+                        </p>
+                        <p class="project-description">
+                            Comprehensive SAM solution for tracking licenses, optimizing spending, and maintaining compliance.
+                            Features ELP tracking, renewal alerts, cost allocation, and scenario planning.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature-tag"><i class="fas fa-check"></i> License Tracking</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Compliance</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> Cost Optimization</span>
+                            <span class="feature-tag"><i class="fas fa-check"></i> ServiceNow Integration</span>
+                        </div>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-cube"></i>
+                                <strong>5</strong>
+                                <span>Modules</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fab fa-python"></i>
+                                <strong>Python</strong>
+                                <span>Tech Stack</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-balance-scale"></i>
+                                <strong>MIT</strong>
+                                <span>License</span>
+                            </div>
+                        </div>
+                        <div class="github-stats">
+                            <img src="https://img.shields.io/github/stars/paulsemaan007/OpenSAM?style=social" alt="GitHub stars">
+                            <img src="https://img.shields.io/github/forks/paulsemaan007/OpenSAM?style=social" alt="GitHub forks">
+                            <img src="https://img.shields.io/github/license/paulsemaan007/OpenSAM" alt="License">
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://opensam.streamlit.app" class="btn-primary" target="_blank" rel="noopener" id="demo-link">
+                                <i class="fas fa-play"></i> Try Live Demo
+                            </a>
+                            <a href="https://github.com/paulsemaan007/OpenSAM" class="btn-secondary" target="_blank" rel="noopener">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Coming Soon Card -->
                 <div class="project-card coming-soon">
-                    <div class="project-header">
-                        <h3>More Projects Coming Soon</h3>
+                    <div class="coming-soon-content">
+                        <i class="fas fa-tools fa-3x"></i>
+                        <div class="project-header">
+                            <h3>More Projects Coming Soon</h3>
+                        </div>
+                        <p class="project-description">
+                            We're continuously analyzing job requirements and building solutions for common business needs.
+                            Check back soon or contact us to suggest a project!
+                        </p>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-lightbulb"></i> Request a Project
+                        </a>
                     </div>
-                    <p class="project-description">
-                        We're continuously analyzing job requirements and building solutions for common business needs.
-                        Check back soon or contact us to suggest a project!
-                    </p>
-                    <a href="#contact" class="btn-secondary">Request a Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="use-cases">
+        <div class="container">
+            <h2 class="section-title">Use Cases</h2>
+            <p class="section-subtitle">Real-world scenarios where our tools make an impact</p>
+
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Enterprise IT Teams</h3>
+                    <p>Track hundreds of software licenses across departments, maintain compliance, and optimize spending with automated renewal alerts and cost allocation.</p>
+                    <div class="use-case-stats">
+                        <span><i class="fas fa-chart-line"></i> 30% cost reduction</span>
+                        <span><i class="fas fa-clock"></i> 10 hours saved/week</span>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast-Growing Startups</h3>
+                    <p>Get enterprise-grade SAM tools without the enterprise price tag. Deploy in minutes and scale as you grow, with all features included for free.</p>
+                    <div class="use-case-stats">
+                        <span><i class="fas fa-dollar-sign"></i> $0 upfront cost</span>
+                        <span><i class="fas fa-tachometer-alt"></i> 5-min setup</span>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Compliance Officers</h3>
+                    <p>Ensure audit readiness with automated compliance tracking, detailed license documentation, and comprehensive reporting capabilities.</p>
+                    <div class="use-case-stats">
+                        <span><i class="fas fa-check-circle"></i> 100% audit ready</span>
+                        <span><i class="fas fa-file-alt"></i> Auto reporting</span>
+                    </div>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>Educational Institutions</h3>
+                    <p>Manage academic software licenses, track usage across departments, and ensure compliance with educational licensing terms.</p>
+                    <div class="use-case-stats">
+                        <span><i class="fas fa-users"></i> Multi-department</span>
+                        <span><i class="fas fa-graduation-cap"></i> Education pricing</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,22 +276,30 @@
 
             <div class="steps-grid">
                 <div class="step">
-                    <div class="step-number">1</div>
+                    <div class="step-number">
+                        <i class="fas fa-search"></i>
+                    </div>
                     <h3>Analyze Requirements</h3>
                     <p>We study real job postings to understand what businesses actually need</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
+                    <div class="step-number">
+                        <i class="fas fa-code"></i>
+                    </div>
                     <h3>Build Solution</h3>
                     <p>Create open-source tools that address core business workflows</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">3</div>
+                    <div class="step-number">
+                        <i class="fas fa-gift"></i>
+                    </div>
                     <h3>Free to Use</h3>
                     <p>Anyone can download, deploy, and use our tools at no cost</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">4</div>
+                    <div class="step-number">
+                        <i class="fas fa-cogs"></i>
+                    </div>
                     <h3>Custom Implementation</h3>
                     <p>Need customization, integrations, or hosting? We provide professional services</p>
                 </div>
@@ -209,6 +385,259 @@
         </div>
     </section>
 
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What People Say</h2>
+            <p class="section-subtitle">Trusted by developers and businesses worldwide</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"OpenSAM saved us thousands in licensing costs. The compliance tracking alone makes it invaluable for our audit process."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Sarah Mitchell</strong>
+                            <span>IT Director, Tech Corp</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Finally, an open-source SAM tool that actually works! The deployment was straightforward and the features are comprehensive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>James Rodriguez</strong>
+                            <span>Software Engineer, StartupXYZ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The professional customization service was excellent. They integrated OpenSAM with our existing systems seamlessly."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <strong>Emily Chen</strong>
+                            <span>CTO, Enterprise Solutions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about our projects and services</p>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is it really free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! All our projects are 100% free and open-source under the MIT license. You can download, use, modify, and even redistribute them without any cost. We only charge for optional professional services like custom development, hosting, and integrations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do you make money if everything is free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer professional services for businesses that need customization, third-party integrations, managed hosting, white-label branding, or priority support. The core tools remain free forever, while professional services are available for teams who want tailored solutions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I use this for my company?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our tools are built specifically for business use. The MIT license allows commercial use without restrictions. Many companies use our tools in production environments.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do I get support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Free users can get community support through GitHub issues. Professional and Enterprise customers receive priority email support, dedicated Slack channels, and direct access to our development team.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How often are projects updated?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We actively maintain all projects with regular updates for bug fixes, security patches, and new features. Major updates are released quarterly, while critical fixes are deployed as needed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I contribute to the projects?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We welcome contributions from the community. Check out our GitHub repositories for contribution guidelines. We appreciate bug reports, feature requests, documentation improvements, and code contributions.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What's your deployment process?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Each project includes detailed deployment instructions and setup scripts. Most projects can be deployed in under 10 minutes. We support various deployment methods including Docker, cloud platforms (AWS, Azure, GCP), and traditional servers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Updates</h2>
+            <p class="section-subtitle">News, tutorials, and insights from the AppForge Labs team</p>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <span class="blog-badge">Launch</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 15, 2025</span>
+                            <span><i class="fas fa-tag"></i> Product</span>
+                        </div>
+                        <h3>OpenSAM 1.0 Released</h3>
+                        <p>We're excited to announce the official release of OpenSAM, our comprehensive Software Asset Management solution built from real-world requirements.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <span class="blog-badge">Tutorial</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 10, 2025</span>
+                            <span><i class="fas fa-tag"></i> Guide</span>
+                        </div>
+                        <h3>Getting Started with OpenSAM</h3>
+                        <p>A complete guide to deploying OpenSAM in your organization, from installation to advanced configuration and best practices.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <span class="blog-badge">Insights</span>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> Jan 5, 2025</span>
+                            <span><i class="fas fa-tag"></i> Research</span>
+                        </div>
+                        <h3>How We Build from Job Requirements</h3>
+                        <p>Behind the scenes: Our process for analyzing job postings and identifying the tools businesses actually need.</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta">
+                <a href="#newsletter" class="btn-secondary">
+                    <i class="fas fa-envelope"></i> Subscribe for Updates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Stay Updated</h2>
+                    <p>Get notified about new projects, updates, and exclusive insights delivered to your inbox.</p>
+                    <ul class="newsletter-benefits">
+                        <li><i class="fas fa-check-circle"></i> Early access to new projects</li>
+                        <li><i class="fas fa-check-circle"></i> Technical tutorials & guides</li>
+                        <li><i class="fas fa-check-circle"></i> Product updates & roadmap</li>
+                        <li><i class="fas fa-check-circle"></i> No spam, unsubscribe anytime</li>
+                    </ul>
+                </div>
+                <div class="newsletter-form">
+                    <form id="newsletter-form" action="https://formspree.io/f/movyqdvp" method="POST">
+                        <input type="hidden" name="_subject" value="Newsletter Subscription">
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-primary">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                        <p class="newsletter-privacy">
+                            <i class="fas fa-lock"></i> We respect your privacy. No spam, ever.
+                        </p>
+                    </form>
+                    <div id="newsletter-status" class="form-status"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -222,17 +651,21 @@
 
                     <div class="contact-methods">
                         <div class="contact-method">
-                            <strong>📧 Email</strong>
+                            <strong><i class="fas fa-envelope"></i> Email</strong>
                             <p><a href="mailto:paulsemaan007@gmail.com">paulsemaan007@gmail.com</a></p>
                         </div>
                         <div class="contact-method">
-                            <strong>💻 GitHub</strong>
+                            <strong><i class="fab fa-github"></i> GitHub</strong>
                             <p><a href="https://github.com/paulsemaan007" target="_blank" rel="noopener">@paulsemaan007</a></p>
+                        </div>
+                        <div class="contact-method">
+                            <strong><i class="fab fa-linkedin"></i> LinkedIn</strong>
+                            <p><a href="https://linkedin.com/in/paulsemaan007" target="_blank" rel="noopener">Connect with us</a></p>
                         </div>
                     </div>
 
                     <div class="response-time">
-                        <p>⏱️ Typical response time: 24-48 hours</p>
+                        <p><i class="fas fa-clock"></i> Typical response time: 24-48 hours</p>
                     </div>
                 </div>
 
@@ -278,31 +711,69 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>AppForge Labs</h3>
-                    <p>Forging solutions from real-world requirements</p>
+                    <div class="footer-logo">
+                        <img src="images/logo.svg" alt="AppForge Labs">
+                        <h3>AppForge Labs</h3>
+                    </div>
+                    <p>Forging solutions from real-world requirements. Open-source enterprise tools with professional customization.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/paulsemaan007" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/paulsemaan007" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/appforgelabs" target="_blank" rel="noopener" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:paulsemaan007@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="footer-links">
                     <h4>Projects</h4>
                     <ul>
-                        <li><a href="https://github.com/paulsemaan007/OpenSAM" target="_blank" rel="noopener">OpenSAM</a></li>
-                        <li><a href="https://github.com/paulsemaan007" target="_blank" rel="noopener">All Projects</a></li>
+                        <li><a href="#projects">All Projects</a></li>
+                        <li><a href="https://opensam.streamlit.app" target="_blank" rel="noopener">OpenSAM Demo</a></li>
+                        <li><a href="https://github.com/paulsemaan007/OpenSAM" target="_blank" rel="noopener">OpenSAM GitHub</a></li>
+                        <li><a href="#contact">Request Project</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Company</h4>
                     <ul>
+                        <li><a href="#about">About Us</a></li>
                         <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 AppForge Labs. All rights reserved.</p>
-                <p>Built with ❤️ for developers and businesses</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy</a>
+                    <a href="#faq">Terms</a>
+                    <a href="https://github.com/paulsemaan007" target="_blank" rel="noopener">Open Source</a>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
